@@ -106,8 +106,15 @@ button:hover{
 }
 .gallery{
  display: grid;
- grid-template-columns: auto auto auto auto;
+ grid-template-rows: auto auto;
  gap: 10px;
+ padding: 10px;
+}
+.top, .down{
+ display: grid;
+ grid-template-columns: auto auto;
+ justify-content: center;
+ gap: 20px;
  padding: 10px;
 }
 .img1{
@@ -124,21 +131,21 @@ button:hover{
  grid-column: 1;
 }
 .img5{
- grid-row: 3;
+ grid-row: 2;
  grid-column: 1;
 }
 .img6{
  grid-column: 2;
- grid-row: 3 / span 2;
+ grid-row: 1 / span 2;
 }
 .con{
-display: flex;
-justify-content: center;
+text-align: center;
 }
 .Contact{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
+ display: grid;
+ grid-template-columns: auto auto;
+ justify-content: center;
+ gap: 300px;
  background-color: #ECF2F1;
  padding: 64px 135px 64px 135px;
 }
